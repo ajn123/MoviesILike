@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BMW</key>
+	<array>
+		<string>bmw.png</string>
+		<string>3 Series</string>
+		<string>5 Series</string>
+		<string>6 Series</string>
+		<string>7 Series</string>
+		<string>ActiveHybrid</string>
+		<string>M3</string>
+		<string>M5</string>
+		<string>M6</string>
+		<string>X3</string>
+		<string>X5 M SAV</string>
+		<string>X6 M SAV</string>
+		<string>Z4</string>
+	</array>
+	<key>Chrysler</key>
+	<array>
+		<string>chrysler.png</string>
+		<string>200</string>
+		<string>300</string>
+		<string>Jeep Commander</string>
+		<string>Jeep Compass</string>
+		<string>Jeep Grand Cherokee</string>
+		<string>Jeep Liberty</string>
+		<string>Jeep Patriot</string>
+		<string>Jeep Wrangler</string>
+		<string>Dodge Avenger</string>
+		<string>Dodge Caliber</string>
+		<string>Dodge Challenger</string>
+		<string>Dodge Charger</string>
+		<string>Dodge Dakota</string>
+		<string>Dodge Durango</string>
+		<string>Dodge Journey</string>
+		<string>Dodge Nitro</string>
+		<string>Dodge Ram</string>
+		<string>Dodge Sprinter</string>
+		<string>Dodge Viper</string>
+		<string>Pacifica</string>
+		<string>PT Cruiser</string>
+		<string>Sebring</string>
+		<string>Town &amp; Country</string>
+	</array>
+	<key>Ford</key>
+	<array>
+		<string>ford.png</string>
+		<string>Fiesta</string>
+		<string>Focus Sedan</string>
+		<string>Fusion</string>
+		<string>Mustang</string>
+		<string>Taurus</string>
+		<string>Edge</string>
+		<string>Flex</string>
+		<string>Escape</string>
+		<string>Explorer</string>
+		<string>Sport Trac</string>
+		<string>Expedition</string>
+		<string>Ranger</string>
+		<string>F-150</string>
+		<string>E-Series</string>
+	</array>
+	<key>General Motors</key>
+	<array>
+		<string>gm.png</string>
+		<string>Chevrolet Volt</string>
+		<string>Chevrolet Camaro</string>
+		<string>Chevrolet Cruze</string>
+		<string>Chevrolet Silverado</string>
+		<string>Buick Regal</string>
+		<string>Buick Enclave</string>
+		<string>Buick Lacrosse</string>
+		<string>Cadillac CTS</string>
+		<string>Cadillac SRX</string>
+		<string>Cadillac Escalade</string>
+		<string>Cadillac CTS-V Coupe</string>
+		<string>GMC Acadia</string>
+		<string>GMC Sierra</string>
+		<string>GMC Terrain</string>
+		<string>GMC Yukon</string>
+	</array>
+	<key>Honda</key>
+	<array>
+		<string>honda.png</string>
+		<string>Accord</string>
+		<string>Crosstour</string>
+		<string>Civic</string>
+		<string>CR-V</string>
+		<string>CR-Z</string>
+		<string>Element</string>
+		<string>FCX Clarity</string>
+		<string>Fit</string>
+		<string>Insight</string>
+		<string>Odyssey</string>
+		<string>Pilot</string>
+		<string>Ridgeline</string>
+	</array>
+	<key>Hyundai</key>
+	<array>
+		<string>hyundai.png</string>
+		<string>Accent</string>
+		<string>Elantra</string>
+		<string>Sonata</string>
+		<string>Azera</string>
+		<string>Tucson</string>
+		<string>Santa Fe</string>
+		<string>Veracruz</string>
+		<string>Genesis</string>
+		<string>Equus</string>
+	</array>
+	<key>Mazda</key>
+	<array>
+		<string>mazda.png</string>
+		<string>Mazda 2</string>
+		<string>Mazda 3</string>
+		<string>Mazda 5</string>
+		<string>Mazda 6</string>
+		<string>MX-5 Miata</string>
+		<string>RX-8</string>
+		<string>Mazda Speed 3</string>
+		<string>Tribute</string>
+		<string>CX-7</string>
+		<string>CX-9</string>
+	</array>
+	<key>Mercedes-Benz</key>
+	<array>
+		<string>mercedes.png</string>
+		<string>C-Class</string>
+		<string>CL-Class</string>
+		<string>CLS-Class</string>
+		<string>E-Class</string>
+		<string>G-Class</string>
+		<string>GL-Class</string>
+		<string>GLK-Class</string>
+		<string>M-Class</string>
+		<string>R-Class</string>
+		<string>S-Class</string>
+		<string>SL-Class</string>
+		<string>SLK-Class</string>
+		<string>SLS AMG</string>
+		<string>Sprinter</string>
+	</array>
+	<key>Nissan</key>
+	<array>
+		<string>nissan.png</string>
+		<string>370Z</string>
+		<string>Altima</string>
+		<string>Armada</string>
+		<string>Cube</string>
+		<string>Frontier</string>
+		<string>GT-R</string>
+		<string>Juke</string>
+		<string>Leaf</string>
+		<string>Maxima</string>
+		<string>Murano</string>
+		<string>NV1500</string>
+		<string>NV2500</string>
+		<string>NV3500</string>
+		<string>Pathfinder</string>
+		<string>Quest</string>
+		<string>Rogue</string>
+		<string>Sentra</string>
+		<string>Titan</string>
+		<string>Versa</string>
+		<string>Xterra</string>
+	</array>
+	<key>Subaru</key>
+	<array>
+		<string>subaru.png</string>
+		<string>Forester</string>
+		<string>Impreza</string>
+		<string>Impreza WRX</string>
+		<string>Legacy</string>
+		<string>Outback</string>
+		<string>Tribeca</string>
+	</array>
+	<key>Suzuki</key>
+	<array>
+		<string>suzuki.png</string>
+		<string>Equator</string>
+		<string>Grand Vitara</string>
+		<string>Kizashi</string>
+		<string>SX4</string>
+		<string>SX4 Crossover</string>
+		<string>SX4 Sport</string>
+		<string>SX4 Sportback</string>
+		<string>XLT</string>
+	</array>
+	<key>Toyota</key>
+	<array>
+		<string>toyota.png</string>
+		<string>4Runner</string>
+		<string>Avalon</string>
+		<string>Camry</string>
+		<string>Corolla</string>
+		<string>FJ Cruiser</string>
+		<string>Highlander</string>
+		<string>Highlander Hybrid</string>
+		<string>Land Cruiser</string>
+		<string>Matrix</string>
+		<string>Prius</string>
+		<string>RAV-4</string>
+		<string>Sequoia</string>
+		<string>Sienna</string>
+		<string>Tacoma</string>
+		<string>Tundra</string>
+		<string>Venza</string>
+		<string>Yaris</string>
+	</array>
+	<key>Volkswagen</key>
+	<array>
+		<string>vw.png</string>
+		<string>Beetle</string>
+		<string>CC</string>
+		<string>Eos</string>
+		<string>GLI</string>
+		<string>Golf</string>
+		<string>GTI</string>
+		<string>Jetta</string>
+		<string>Passat</string>
+		<string>Rabbit</string>
+		<string>Routan</string>
+		<string>Tiguan</string>
+		<string>Touareg 2</string>
+	</array>
+	<key>Volvo</key>
+	<array>
+		<string>volvo.png</string>
+		<string>C30</string>
+		<string>C70</string>
+		<string>S40</string>
+		<string>S60</string>
+		<string>S80</string>
+		<string>V50</string>
+		<string>V70</string>
+		<string>XC60</string>
+		<string>XC70</string>
+		<string>XC90</string>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2AAE192183BB4A900387A64 /* MyFavoriteMovies.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2AAE191183BB4A900387A64 /* MyFavoriteMovies.plist */; };
+		F2AAE197183C5EF800387A64 /* Automobiles.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2AAE196183C5EF800387A64 /* Automobiles.plist */; };
+		F2AAE199183C7D3B00387A64 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AAE198183C7D3B00387A64 /* CoreLocation.framework */; };
+		F2AAE19C183C7F8100387A64 /* TheaterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AAE19B183C7F8100387A64 /* TheaterViewController.m */; };
+		F2AAE19F183C9CE900387A64 /* AddressMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AAE19E183C9CE900387A64 /* AddressMapViewController.m */; };
+		F2AAE6D1183D2ACB0084F0AC /* DirectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AAE6D0183D2ACB0084F0AC /* DirectionsViewController.m */; };
+		F2AAE6D7183D581C0084F0AC /* AddCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AAE6D6183D581C0084F0AC /* AddCityViewController.m */; };
+		F2AAE6DA183D62860084F0AC /* DeleteCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AAE6D9183D62860084F0AC /* DeleteCityViewController.m */; };
+		F2AAE6DD183DEEB40084F0AC /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AAE6DC183DEEB40084F0AC /* ScrollViewController.m */; };
+		F2AAE6E0183DF7DD0084F0AC /* ScrollWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AAE6DF183DF7DD0084F0AC /* ScrollWebViewController.m */; };
+		F2AFD21A183A74EE00596EB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AFD219183A74EE00596EB2 /* Foundation.framework */; };
+		F2AFD21C183A74EE00596EB2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AFD21B183A74EE00596EB2 /* CoreGraphics.framework */; };
+		F2AFD21E183A74EE00596EB2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AFD21D183A74EE00596EB2 /* UIKit.framework */; };
+		F2AFD224183A74EF00596EB2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2AFD222183A74EF00596EB2 /* InfoPlist.strings */; };
+		F2AFD226183A74EF00596EB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AFD225183A74EF00596EB2 /* main.m */; };
+		F2AFD22A183A74EF00596EB2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AFD229183A74EF00596EB2 /* AppDelegate.m */; };
+		F2AFD22D183A74EF00596EB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2AFD22B183A74EF00596EB2 /* Main.storyboard */; };
+		F2AFD230183A74EF00596EB2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AFD22F183A74EF00596EB2 /* ViewController.m */; };
+		F2AFD232183A74EF00596EB2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2AFD231183A74EF00596EB2 /* Images.xcassets */; };
+		F2AFD239183A74EF00596EB2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AFD238183A74EF00596EB2 /* XCTest.framework */; };
+		F2AFD23A183A74EF00596EB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AFD219183A74EE00596EB2 /* Foundation.framework */; };
+		F2AFD23B183A74EF00596EB2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AFD21D183A74EE00596EB2 /* UIKit.framework */; };
+		F2AFD243183A74EF00596EB2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2AFD241183A74EF00596EB2 /* InfoPlist.strings */; };
+		F2AFD245183A74EF00596EB2 /* MoviesILikeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AFD244183A74EF00596EB2 /* MoviesILikeTests.m */; };
+		F2AFD24F183A752000596EB2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AFD24E183A752000596EB2 /* MapKit.framework */; };
+		F2AFD253183A79A000596EB2 /* MyFavoriteTheaters.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2AFD252183A79A000596EB2 /* MyFavoriteTheaters.plist */; };
+		F2AFD256183A7AD400596EB2 /* maps.html in Resources */ = {isa = PBXBuildFile; fileRef = F2AFD255183A7AD400596EB2 /* maps.html */; };
+		F2AFD258183AA81A00596EB2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AFD257183AA81A00596EB2 /* CoreData.framework */; };
+		F2AFD265183AF74A00596EB2 /* MoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AFD264183AF74A00596EB2 /* MoviesViewController.m */; };
+		F2AFD268183AFF0C00596EB2 /* MovieWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AFD267183AFF0C00596EB2 /* MovieWebViewController.m */; };
+		F2AFD26B183B03E600596EB2 /* AddMoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AFD26A183B03E600596EB2 /* AddMoviesViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2AFD23C183A74EF00596EB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2AFD20E183A74EE00596EB2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2AFD215183A74EE00596EB2;
+			remoteInfo = MoviesILike;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F2AAE191183BB4A900387A64 /* MyFavoriteMovies.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyFavoriteMovies.plist; sourceTree = "<group>"; };
+		F2AAE196183C5EF800387A64 /* Automobiles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Automobiles.plist; path = ../Automobiles.plist; sourceTree = "<group>"; };
+		F2AAE198183C7D3B00387A64 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F2AAE19A183C7F8100387A64 /* TheaterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheaterViewController.h; sourceTree = "<group>"; };
+		F2AAE19B183C7F8100387A64 /* TheaterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheaterViewController.m; sourceTree = "<group>"; };
+		F2AAE19D183C9CE900387A64 /* AddressMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressMapViewController.h; sourceTree = "<group>"; };
+		F2AAE19E183C9CE900387A64 /* AddressMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressMapViewController.m; sourceTree = "<group>"; };
+		F2AAE6CF183D2ACB0084F0AC /* DirectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionsViewController.h; sourceTree = "<group>"; };
+		F2AAE6D0183D2ACB0084F0AC /* DirectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectionsViewController.m; sourceTree = "<group>"; };
+		F2AAE6D5183D581C0084F0AC /* AddCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCityViewController.h; sourceTree = "<group>"; };
+		F2AAE6D6183D581C0084F0AC /* AddCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCityViewController.m; sourceTree = "<group>"; };
+		F2AAE6D8183D62860084F0AC /* DeleteCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteCityViewController.h; sourceTree = "<group>"; };
+		F2AAE6D9183D62860084F0AC /* DeleteCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteCityViewController.m; sourceTree = "<group>"; };
+		F2AAE6DB183DEEB40084F0AC /* ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
+		F2AAE6DC183DEEB40084F0AC /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
+		F2AAE6DE183DF7DD0084F0AC /* ScrollWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollWebViewController.h; sourceTree = "<group>"; };
+		F2AAE6DF183DF7DD0084F0AC /* ScrollWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollWebViewController.m; sourceTree = "<group>"; };
+		F2AFD216183A74EE00596EB2 /* MoviesILike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviesILike.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2AFD219183A74EE00596EB2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F2AFD21B183A74EE00596EB2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F2AFD21D183A74EE00596EB2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F2AFD221183A74EF00596EB2 /* MoviesILike-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MoviesILike-Info.plist"; sourceTree = "<group>"; };
+		F2AFD223183A74EF00596EB2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F2AFD225183A74EF00596EB2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F2AFD227183A74EF00596EB2 /* MoviesILike-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MoviesILike-Prefix.pch"; sourceTree = "<group>"; };
+		F2AFD228183A74EF00596EB2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F2AFD229183A74EF00596EB2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F2AFD22C183A74EF00596EB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2AFD22E183A74EF00596EB2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F2AFD22F183A74EF00596EB2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F2AFD231183A74EF00596EB2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F2AFD237183A74EF00596EB2 /* MoviesILikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoviesILikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2AFD238183A74EF00596EB2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F2AFD240183A74EF00596EB2 /* MoviesILikeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MoviesILikeTests-Info.plist"; sourceTree = "<group>"; };
+		F2AFD242183A74EF00596EB2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F2AFD244183A74EF00596EB2 /* MoviesILikeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviesILikeTests.m; sourceTree = "<group>"; };
+		F2AFD24E183A752000596EB2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F2AFD252183A79A000596EB2 /* MyFavoriteTheaters.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyFavoriteTheaters.plist; sourceTree = "<group>"; };
+		F2AFD255183A7AD400596EB2 /* maps.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = maps.html; sourceTree = "<group>"; };
+		F2AFD257183AA81A00596EB2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F2AFD263183AF74A00596EB2 /* MoviesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviesViewController.h; sourceTree = "<group>"; };
+		F2AFD264183AF74A00596EB2 /* MoviesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviesViewController.m; sourceTree = "<group>"; };
+		F2AFD266183AFF0C00596EB2 /* MovieWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieWebViewController.h; sourceTree = "<group>"; };
+		F2AFD267183AFF0C00596EB2 /* MovieWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieWebViewController.m; sourceTree = "<group>"; };
+		F2AFD269183B03E600596EB2 /* AddMoviesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMoviesViewController.h; sourceTree = "<group>"; };
+		F2AFD26A183B03E600596EB2 /* AddMoviesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMoviesViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2AFD213183A74EE00596EB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2AAE199183C7D3B00387A64 /* CoreLocation.framework in Frameworks */,
+				F2AFD258183AA81A00596EB2 /* CoreData.framework in Frameworks */,
+				F2AFD24F183A752000596EB2 /* MapKit.framework in Frameworks */,
+				F2AFD21C183A74EE00596EB2 /* CoreGraphics.framework in Frameworks */,
+				F2AFD21E183A74EE00596EB2 /* UIKit.framework in Frameworks */,
+				F2AFD21A183A74EE00596EB2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2AFD234183A74EF00596EB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2AFD239183A74EF00596EB2 /* XCTest.framework in Frameworks */,
+				F2AFD23B183A74EF00596EB2 /* UIKit.framework in Frameworks */,
+				F2AFD23A183A74EF00596EB2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2AFD20D183A74EE00596EB2 = {
+			isa = PBXGroup;
+			children = (
+				F2AFD21F183A74EE00596EB2 /* MoviesILike */,
+				F2AFD23E183A74EF00596EB2 /* MoviesILikeTests */,
+				F2AFD218183A74EE00596EB2 /* Frameworks */,
+				F2AFD217183A74EE00596EB2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2AFD217183A74EE00596EB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2AFD216183A74EE00596EB2 /* MoviesILike.app */,
+				F2AFD237183A74EF00596EB2 /* MoviesILikeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2AFD218183A74EE00596EB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2AAE198183C7D3B00387A64 /* CoreLocation.framework */,
+				F2AFD257183AA81A00596EB2 /* CoreData.framework */,
+				F2AFD24E183A752000596EB2 /* MapKit.framework */,
+				F2AFD219183A74EE00596EB2 /* Foundation.framework */,
+				F2AFD21B183A74EE00596EB2 /* CoreGraphics.framework */,
+				F2AFD21D183A74EE00596EB2 /* UIKit.framework */,
+				F2AFD238183A74EF00596EB2 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2AFD21F183A74EE00596EB2 /* MoviesILike */ = {
+			isa = PBXGroup;
+			children = (
+				F2AAE196183C5EF800387A64 /* Automobiles.plist */,
+				F2AAE191183BB4A900387A64 /* MyFavoriteMovies.plist */,
+				F2AFD259183AA85500596EB2 /* View Controllers */,
+				F2AFD254183A7AD400596EB2 /* Google Maps JavaScript API */,
+				F2AFD252183A79A000596EB2 /* MyFavoriteTheaters.plist */,
+				F2AFD228183A74EF00596EB2 /* AppDelegate.h */,
+				F2AFD229183A74EF00596EB2 /* AppDelegate.m */,
+				F2AFD22B183A74EF00596EB2 /* Main.storyboard */,
+				F2AFD22E183A74EF00596EB2 /* ViewController.h */,
+				F2AFD22F183A74EF00596EB2 /* ViewController.m */,
+				F2AFD231183A74EF00596EB2 /* Images.xcassets */,
+				F2AFD220183A74EE00596EB2 /* Supporting Files */,
+			);
+			path = MoviesILike;
+			sourceTree = "<group>";
+		};
+		F2AFD220183A74EE00596EB2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2AFD221183A74EF00596EB2 /* MoviesILike-Info.plist */,
+				F2AFD222183A74EF00596EB2 /* InfoPlist.strings */,
+				F2AFD225183A74EF00596EB2 /* main.m */,
+				F2AFD227183A74EF00596EB2 /* MoviesILike-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2AFD23E183A74EF00596EB2 /* MoviesILikeTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2AFD244183A74EF00596EB2 /* MoviesILikeTests.m */,
+				F2AFD23F183A74EF00596EB2 /* Supporting Files */,
+			);
+			path = MoviesILikeTests;
+			sourceTree = "<group>";
+		};
+		F2AFD23F183A74EF00596EB2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2AFD240183A74EF00596EB2 /* MoviesILikeTests-Info.plist */,
+				F2AFD241183A74EF00596EB2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2AFD254183A7AD400596EB2 /* Google Maps JavaScript API */ = {
+			isa = PBXGroup;
+			children = (
+				F2AFD255183A7AD400596EB2 /* maps.html */,
+			);
+			path = "Google Maps JavaScript API";
+			sourceTree = "<group>";
+		};
+		F2AFD259183AA85500596EB2 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F2AFD263183AF74A00596EB2 /* MoviesViewController.h */,
+				F2AFD264183AF74A00596EB2 /* MoviesViewController.m */,
+				F2AFD266183AFF0C00596EB2 /* MovieWebViewController.h */,
+				F2AFD267183AFF0C00596EB2 /* MovieWebViewController.m */,
+				F2AFD269183B03E600596EB2 /* AddMoviesViewController.h */,
+				F2AFD26A183B03E600596EB2 /* AddMoviesViewController.m */,
+				F2AAE19A183C7F8100387A64 /* TheaterViewController.h */,
+				F2AAE19B183C7F8100387A64 /* TheaterViewController.m */,
+				F2AAE19D183C9CE900387A64 /* AddressMapViewController.h */,
+				F2AAE19E183C9CE900387A64 /* AddressMapViewController.m */,
+				F2AAE6CF183D2ACB0084F0AC /* DirectionsViewController.h */,
+				F2AAE6D0183D2ACB0084F0AC /* DirectionsViewController.m */,
+				F2AAE6D5183D581C0084F0AC /* AddCityViewController.h */,
+				F2AAE6D6183D581C0084F0AC /* AddCityViewController.m */,
+				F2AAE6D8183D62860084F0AC /* DeleteCityViewController.h */,
+				F2AAE6D9183D62860084F0AC /* DeleteCityViewController.m */,
+				F2AAE6DB183DEEB40084F0AC /* ScrollViewController.h */,
+				F2AAE6DC183DEEB40084F0AC /* ScrollViewController.m */,
+				F2AAE6DE183DF7DD0084F0AC /* ScrollWebViewController.h */,
+				F2AAE6DF183DF7DD0084F0AC /* ScrollWebViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2AFD215183A74EE00596EB2 /* MoviesILike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2AFD248183A74EF00596EB2 /* Build configuration list for PBXNativeTarget "MoviesILike" */;
+			buildPhases = (
+				F2AFD212183A74EE00596EB2 /* Sources */,
+				F2AFD213183A74EE00596EB2 /* Frameworks */,
+				F2AFD214183A74EE00596EB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoviesILike;
+			productName = MoviesILike;
+			productReference = F2AFD216183A74EE00596EB2 /* MoviesILike.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2AFD236183A74EF00596EB2 /* MoviesILikeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2AFD24B183A74EF00596EB2 /* Build configuration list for PBXNativeTarget "MoviesILikeTests" */;
+			buildPhases = (
+				F2AFD233183A74EF00596EB2 /* Sources */,
+				F2AFD234183A74EF00596EB2 /* Frameworks */,
+				F2AFD235183A74EF00596EB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2AFD23D183A74EF00596EB2 /* PBXTargetDependency */,
+			);
+			name = MoviesILikeTests;
+			productName = MoviesILikeTests;
+			productReference = F2AFD237183A74EF00596EB2 /* MoviesILikeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2AFD20E183A74EE00596EB2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Alex Norton";
+				TargetAttributes = {
+					F2AFD236183A74EF00596EB2 = {
+						TestTargetID = F2AFD215183A74EE00596EB2;
+					};
+				};
+			};
+			buildConfigurationList = F2AFD211183A74EE00596EB2 /* Build configuration list for PBXProject "MoviesILike" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2AFD20D183A74EE00596EB2;
+			productRefGroup = F2AFD217183A74EE00596EB2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2AFD215183A74EE00596EB2 /* MoviesILike */,
+				F2AFD236183A74EF00596EB2 /* MoviesILikeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2AFD214183A74EE00596EB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2AFD232183A74EF00596EB2 /* Images.xcassets in Resources */,
+				F2AFD224183A74EF00596EB2 /* InfoPlist.strings in Resources */,
+				F2AFD256183A7AD400596EB2 /* maps.html in Resources */,
+				F2AAE197183C5EF800387A64 /* Automobiles.plist in Resources */,
+				F2AFD22D183A74EF00596EB2 /* Main.storyboard in Resources */,
+				F2AFD253183A79A000596EB2 /* MyFavoriteTheaters.plist in Resources */,
+				F2AAE192183BB4A900387A64 /* MyFavoriteMovies.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2AFD235183A74EF00596EB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2AFD243183A74EF00596EB2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2AFD212183A74EE00596EB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2AAE19F183C9CE900387A64 /* AddressMapViewController.m in Sources */,
+				F2AAE6D7183D581C0084F0AC /* AddCityViewController.m in Sources */,
+				F2AFD230183A74EF00596EB2 /* ViewController.m in Sources */,
+				F2AAE6DD183DEEB40084F0AC /* ScrollViewController.m in Sources */,
+				F2AAE6D1183D2ACB0084F0AC /* DirectionsViewController.m in Sources */,
+				F2AFD22A183A74EF00596EB2 /* AppDelegate.m in Sources */,
+				F2AFD268183AFF0C00596EB2 /* MovieWebViewController.m in Sources */,
+				F2AFD265183AF74A00596EB2 /* MoviesViewController.m in Sources */,
+				F2AAE6E0183DF7DD0084F0AC /* ScrollWebViewController.m in Sources */,
+				F2AAE19C183C7F8100387A64 /* TheaterViewController.m in Sources */,
+				F2AAE6DA183D62860084F0AC /* DeleteCityViewController.m in Sources */,
+				F2AFD226183A74EF00596EB2 /* main.m in Sources */,
+				F2AFD26B183B03E600596EB2 /* AddMoviesViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2AFD233183A74EF00596EB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2AFD245183A74EF00596EB2 /* MoviesILikeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2AFD23D183A74EF00596EB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2AFD215183A74EE00596EB2 /* MoviesILike */;
+			targetProxy = F2AFD23C183A74EF00596EB2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F2AFD222183A74EF00596EB2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2AFD223183A74EF00596EB2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F2AFD22B183A74EF00596EB2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2AFD22C183A74EF00596EB2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F2AFD241183A74EF00596EB2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2AFD242183A74EF00596EB2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2AFD246183A74EF00596EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F2AFD247183A74EF00596EB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2AFD249183A74EF00596EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MoviesILike/MoviesILike-Prefix.pch";
+				INFOPLIST_FILE = "MoviesILike/MoviesILike-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F2AFD24A183A74EF00596EB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MoviesILike/MoviesILike-Prefix.pch";
+				INFOPLIST_FILE = "MoviesILike/MoviesILike-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F2AFD24C183A74EF00596EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MoviesILike.app/MoviesILike";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MoviesILike/MoviesILike-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MoviesILikeTests/MoviesILikeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F2AFD24D183A74EF00596EB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MoviesILike.app/MoviesILike";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MoviesILike/MoviesILike-Prefix.pch";
+				INFOPLIST_FILE = "MoviesILikeTests/MoviesILikeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2AFD211183A74EE00596EB2 /* Build configuration list for PBXProject "MoviesILike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2AFD246183A74EF00596EB2 /* Debug */,
+				F2AFD247183A74EF00596EB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2AFD248183A74EF00596EB2 /* Build configuration list for PBXNativeTarget "MoviesILike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2AFD249183A74EF00596EB2 /* Debug */,
+				F2AFD24A183A74EF00596EB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2AFD24B183A74EF00596EB2 /* Build configuration list for PBXNativeTarget "MoviesILikeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2AFD24C183A74EF00596EB2 /* Debug */,
+				F2AFD24D183A74EF00596EB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2AFD20E183A74EE00596EB2 /* Project object */;
+}
