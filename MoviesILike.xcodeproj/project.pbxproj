@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F2AAE192183BB4A900387A64 /* MyFavoriteMovies.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2AAE191183BB4A900387A64 /* MyFavoriteMovies.plist */; };
-		F2AAE197183C5EF800387A64 /* Automobiles.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2AAE196183C5EF800387A64 /* Automobiles.plist */; };
 		F2AAE199183C7D3B00387A64 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AAE198183C7D3B00387A64 /* CoreLocation.framework */; };
 		F2AAE19C183C7F8100387A64 /* TheaterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AAE19B183C7F8100387A64 /* TheaterViewController.m */; };
 		F2AAE19F183C9CE900387A64 /* AddressMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AAE19E183C9CE900387A64 /* AddressMapViewController.m */; };
@@ -52,7 +51,6 @@
 
 /* Begin PBXFileReference section */
 		F2AAE191183BB4A900387A64 /* MyFavoriteMovies.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyFavoriteMovies.plist; sourceTree = "<group>"; };
-		F2AAE196183C5EF800387A64 /* Automobiles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Automobiles.plist; path = ../Automobiles.plist; sourceTree = "<group>"; };
 		F2AAE198183C7D3B00387A64 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F2AAE19A183C7F8100387A64 /* TheaterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheaterViewController.h; sourceTree = "<group>"; };
 		F2AAE19B183C7F8100387A64 /* TheaterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheaterViewController.m; sourceTree = "<group>"; };
@@ -162,7 +160,6 @@
 		F2AFD21F183A74EE00596EB2 /* MoviesILike */ = {
 			isa = PBXGroup;
 			children = (
-				F2AAE196183C5EF800387A64 /* Automobiles.plist */,
 				F2AAE191183BB4A900387A64 /* MyFavoriteMovies.plist */,
 				F2AFD259183AA85500596EB2 /* View Controllers */,
 				F2AFD254183A7AD400596EB2 /* Google Maps JavaScript API */,
@@ -321,7 +318,6 @@
 				F2AFD232183A74EF00596EB2 /* Images.xcassets in Resources */,
 				F2AFD224183A74EF00596EB2 /* InfoPlist.strings in Resources */,
 				F2AFD256183A7AD400596EB2 /* maps.html in Resources */,
-				F2AAE197183C5EF800387A64 /* Automobiles.plist in Resources */,
 				F2AFD22D183A74EF00596EB2 /* Main.storyboard in Resources */,
 				F2AFD253183A79A000596EB2 /* MyFavoriteTheaters.plist in Resources */,
 				F2AAE192183BB4A900387A64 /* MyFavoriteMovies.plist in Resources */,
