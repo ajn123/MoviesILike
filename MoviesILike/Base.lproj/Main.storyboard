@@ -170,7 +170,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YMz-7V-F4b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="665" y="630"/>
+            <point key="canvasLocation" x="731" y="630"/>
         </scene>
         <!--Scroll Web View Controller-->
         <scene sceneID="cGT-0t-kyO">
@@ -208,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="szG-UC-ElV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1145" y="630"/>
+            <point key="canvasLocation" x="1273" y="630"/>
         </scene>
         <!--Movies View Controller - My Movies-->
         <scene sceneID="D8f-hp-l3I">
@@ -220,7 +220,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell multipleTouchEnabled="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MovieCell" textLabel="AGP-2B-YUz" detailTextLabel="PHh-R0-mu9" style="IBUITableViewCellStyleSubtitle" id="zVh-TA-rKG">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zVh-TA-rKG" id="CQn-Cg-NWJ">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>

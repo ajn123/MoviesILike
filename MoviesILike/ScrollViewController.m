@@ -23,20 +23,18 @@
 
 @property (nonatomic, strong) NSString *selectedAutoMaker;
 
+@property (nonatomic, strong) NSMutableArray *currentSelection;
 // This method is invoked when a button in the horizontally scrollable menu is tapped
 - (void)buttonPressed:(id)sender;
 
 @end
 
 
-
-NSMutableArray *currentSelection;
-
 @implementation ScrollViewController
 
 - (void)viewDidLoad {
     // Instantiate the City Data object to pass to the downstream view controller
-    currentSelection = [[NSMutableArray alloc] init];
+    self.currentSelection = [[NSMutableArray alloc] init];
     
     
     self.view.backgroundColor = [UIColor blackColor];
@@ -430,8 +428,8 @@ NSMutableArray *currentSelection;
     NSMutableArray *currentMovieDetails = [currentFavoriteMoviesDict objectForKey:currentIndex];
     
     
-    [currentSelection insertObject:currentMovieDetails[0] atIndex:0];
-    [currentSelection insertObject:currentMovieDetails[2] atIndex:1];
+    [self.currentSelection insertObject:currentMovieDetails[0] atIndex:0];
+    [self.currentSelection insertObject:currentMovieDetails[2] atIndex:1];
 
     [self performSegueWithIdentifier:@"Website" sender:self];
 }
@@ -452,7 +450,7 @@ NSMutableArray *currentSelection;
       ScrollWebViewController *cityWebViewController = [segue destinationViewController];
    
         // Pass the cityData array obj ref to downstream CityWebViewController
-      cityWebViewController.cityData = currentSelection;
+        cityWebViewController.cityData = self.currentSelection;
     }
 }
 
