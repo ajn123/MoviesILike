@@ -78,7 +78,7 @@
 - (void)addCity:(id)sender
 {
     // Perform the segue named AddCity
-    [self performSegueWithIdentifier:@"AddCity" sender:self];
+    [self performSegueWithIdentifier:@"AddMovie" sender:self];
 }
 
 
@@ -137,10 +137,10 @@
         if ([self.movieGenres containsObject:genre]) {
             
             // Get the list of current cities for the country name entered
-            NSMutableDictionary *citiesForCountryNameEntered = [self.favoriteMovies objectForKey:genre];
+            NSMutableDictionary *genresThatAreFound = [self.favoriteMovies objectForKey:genre];
             
            
-            [citiesForCountryNameEntered setObject:currencies forKey:movieName];
+            [genresThatAreFound setObject:currencies forKey:movieName];
             
         }
         else {  // The entered country name does not exist in the current dictionary
@@ -148,10 +148,8 @@
             
             NSMutableDictionary *newGenre = [[NSMutableDictionary alloc] init];
             
-            // The new section will intially have 1 new movie, so the key will always be 1.
             [newGenre setObject:currencies forKey:@"1"];
             
-            // Add the newly entered genre to the current list of genres.
             [self.favoriteMovies setObject:newGenre forKey:genre];
 
             
@@ -270,7 +268,7 @@
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {  // Handle the Delete action
         
-        NSString *countryOfCityToDelete = [self.movieGenres objectAtIndex:[indexPath section]];
+        NSString *MovieIWantToDelete = [self.movieGenres objectAtIndex:[indexPath section]];
        
         
         NSMutableDictionary *currentFavoriteMoviesDict = [self.favoriteMovies objectForKey:indexPath];
@@ -280,12 +278,12 @@
         
         // Obtain the favorite movie based on row number.
     
-        [sortedMovies removeObjectForKey:countryOfCityToDelete];
+        [sortedMovies removeObjectForKey:MovieIWantToDelete];
         
         
         if ([sortedMovies count] == 0) {
             // If no city exists in the currentCities array after deletion, then we need to also delete the country.
-            [self.favoriteMovies removeObjectForKey:countryOfCityToDelete];
+            [self.favoriteMovies removeObjectForKey:MovieIWantToDelete];
             
             // Update the list of countries since one is deleted
             NSMutableArray *sortedCountryNames = (NSMutableArray *)[[self.favoriteMovies allKeys]
@@ -294,7 +292,7 @@
         }
         else {
             // Set the new list of cities for the country
-            [self.favoriteMovies setValue:sortedMovies forKey:countryOfCityToDelete];
+            [self.favoriteMovies setValue:sortedMovies forKey:MovieIWantToDelete];
         }
         
         // Reload the rows and sections of the Table View countryCityTableView
@@ -324,11 +322,11 @@
     NSUInteger rowNumberTo = toIndexPath.row;
 
     
-    NSString *cityToMoveFrom = [sortedMovieGenres2 objectAtIndex:rowNumberFrom];
-    NSString *cityToMoveTo = [sortedMovieGenres2 objectAtIndex:rowNumberTo];
+    NSString *MovieToMove = [sortedMovieGenres2 objectAtIndex:rowNumberFrom];
+    NSString *movieToSwitchFrom = [sortedMovieGenres2 objectAtIndex:rowNumberTo];
 
-    [sortedMovieGenres2 replaceObjectAtIndex:rowNumberTo withObject:cityToMoveFrom];
-    [sortedMovieGenres2 replaceObjectAtIndex:rowNumberFrom withObject:cityToMoveTo];
+    [sortedMovieGenres2 replaceObjectAtIndex:rowNumberTo withObject:MovieToMove];
+    [sortedMovieGenres2 replaceObjectAtIndex:rowNumberFrom withObject:movieToSwitchFrom];
     
     // After the change of order, set the countryCities dictionary with the new list of cities
     [self.favoriteMovies setObject:cities forKey:country];
@@ -348,20 +346,20 @@
 // Tapping a row (city) displays an alert panel informing the user for the selection
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *selectedCountryName = [self.movieGenres objectAtIndex:[indexPath section]];
+    NSString *selectedMovieName = [self.movieGenres objectAtIndex:[indexPath section]];
     
-    NSMutableDictionary *citiesForSelectedCountry = [self.favoriteMovies objectForKey:selectedCountryName];
+    NSMutableDictionary *genresForSelectedMovie = [self.favoriteMovies objectForKey:selectedMovieName];
     
     
-    NSArray *moviesForSelectedGenre_Array = [[citiesForSelectedCountry allKeys] sortedArrayUsingSelector:@selector(compare:)];
+    NSArray *movieForSelectionGenreArray = [[genresForSelectedMovie allKeys] sortedArrayUsingSelector:@selector(compare:)];
     
-    NSMutableArray *moviesForSelectedGenre = [[NSMutableArray alloc] initWithArray:moviesForSelectedGenre_Array];
+    NSMutableArray *moviesForSelectedGenre = [[NSMutableArray alloc] initWithArray:movieForSelectionGenreArray];
 
     
     NSString *selectedCityName = [moviesForSelectedGenre objectAtIndex:[indexPath row]];
     
     
-    NSArray *currentMovieArray = [citiesForSelectedCountry valueForKey:selectedCityName];
+    NSArray *currentMovieArray = [genresForSelectedMovie valueForKey:selectedCityName];
     NSMutableArray *currentMovie = [[NSMutableArray alloc] initWithArray:currentMovieArray];
     
     // Prepare the city data object to pass to the downstream view controller
@@ -369,7 +367,7 @@
     [self.movieData insertObject:currentMovie[2] atIndex:1];
     
     // Perform the segue named ShowCityDetail
-    [self performSegueWithIdentifier:@"CityWeb" sender:self];
+    [self performSegueWithIdentifier:@"MovieWeb" sender:self];
 }
 
 
@@ -379,10 +377,10 @@
 - (NSIndexPath *)tableView:(UITableView *)tableView targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath
        toProposedIndexPath:(NSIndexPath *)proposedDestinationIndexPath
 {
-    NSString *countryFrom = [self.movieGenres objectAtIndex:[sourceIndexPath section]];
-    NSString *countryTo = [self.movieGenres objectAtIndex:[proposedDestinationIndexPath section]];
+    NSString *movieTO = [self.movieGenres objectAtIndex:[sourceIndexPath section]];
+    NSString *movieFROM = [self.movieGenres objectAtIndex:[proposedDestinationIndexPath section]];
     
-    if (countryFrom != countryTo) {
+    if (movieTO != movieFROM) {
         
         // The user attempts to move a city from one country to another, which is prohibited
         UIAlertView *alert = [[UIAlertView alloc]
@@ -407,7 +405,7 @@
 {
     NSString *segueIdentifier = [segue identifier];
     
-    if ([segueIdentifier isEqualToString:@"AddCity"]) {
+    if ([segueIdentifier isEqualToString:@"AddMovie"]) {
         
         // Obtain the object reference of the destination view controller
         AddMoviesViewController *addCityViewController = [segue destinationViewController];
@@ -416,7 +414,7 @@
         addCityViewController.delegate = self;
         
     }
-     else if ([segueIdentifier isEqualToString:@"CityWeb"]) {
+     else if ([segueIdentifier isEqualToString:@"MovieWeb"]) {
         
         // Obtain the object reference of the destination view controller
         MovieWebViewController *cityWebViewController = [segue destinationViewController];

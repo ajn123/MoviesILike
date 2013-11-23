@@ -266,6 +266,13 @@
 }
 
 
+//Synchronizes the plist with the table view.
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [self.autoTableView reloadData];
+    
+}
+
 
 // This method is invoked when the user taps a button in the horizontally scrollable menu
 - (void)buttonPressed:(id)sender {

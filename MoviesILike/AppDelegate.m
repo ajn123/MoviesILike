@@ -63,9 +63,9 @@
     //MyFavoriteMovies
     
     // Instantiate a modifiable dictionary and initialize it with the content of the plist file
-    NSMutableDictionary *favoriteMovies = [[NSMutableDictionary alloc] initWithContentsOfFile:plistFilePathInDocumentsDirectory];
+    NSMutableDictionary *favoriteTheatersToGoTo = [[NSMutableDictionary alloc] initWithContentsOfFile:plistFilePathInDocumentsDirectory];
     
-    if (!favoriteMovies) {
+    if (!favoriteTheatersToGoTo) {
         /*
          In this case, the CountryCities.plist file does not exist in the documents directory.
          This will happen when the user launches the app for the very first time.
@@ -76,10 +76,10 @@
         NSString *plistFilePathInMainBundle = [[NSBundle mainBundle] pathForResource:@"MyFavoriteTheaters" ofType:@"plist"];
         
         // Instantiate a modifiable dictionary and initialize it with the content of the plist file in main bundle
-        favoriteMovies = [[NSMutableDictionary alloc] initWithContentsOfFile:plistFilePathInMainBundle];
+        favoriteTheatersToGoTo = [[NSMutableDictionary alloc] initWithContentsOfFile:plistFilePathInMainBundle];
     }
     
-    self.favoriteTheaters = favoriteMovies;
+    self.favoriteTheaters = favoriteTheatersToGoTo;
 
 }
 
@@ -99,6 +99,8 @@
     
     [self.favoriteTheaters writeToFile:plistFilePathInDocumentsDirectory2 atomically:YES];
 }
+
+
 
 
 

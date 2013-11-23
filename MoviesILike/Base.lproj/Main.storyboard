@@ -248,8 +248,8 @@
                     <navigationItem key="navigationItem" title="My Movies" id="ejP-7T-ue1"/>
                     <connections>
                         <outlet property="moviesTableView" destination="Bsl-Ku-c8D" id="4wi-Oi-8oN"/>
-                        <segue destination="pcV-yr-KjC" kind="push" identifier="AddCity" id="ila-NR-WTX"/>
-                        <segue destination="Frp-ph-yEQ" kind="push" identifier="CityWeb" id="FFk-g8-AQC"/>
+                        <segue destination="pcV-yr-KjC" kind="push" identifier="AddMovie" id="ila-NR-WTX"/>
+                        <segue destination="Frp-ph-yEQ" kind="push" identifier="MovieWeb" id="FFk-g8-AQC"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pFZ-p9-D45" userLabel="First Responder" sceneMemberID="firstResponder"/>

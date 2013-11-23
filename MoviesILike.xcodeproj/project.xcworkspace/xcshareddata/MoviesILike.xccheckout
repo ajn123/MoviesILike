@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2B214D15-1A68-4DAC-8269-04A0CE9E2BEE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MoviesILike</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C80BF340-20B5-4C84-BDF2-63E204F8CDAC</key>
+		<string>https://github.com/ajn123/MoviesILike.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MoviesILike.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C80BF340-20B5-4C84-BDF2-63E204F8CDAC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ajn123/MoviesILike.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C80BF340-20B5-4C84-BDF2-63E204F8CDAC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C80BF340-20B5-4C84-BDF2-63E204F8CDAC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MoviesILike</string>
+		</dict>
+	</array>
+</dict>
+</plist>
